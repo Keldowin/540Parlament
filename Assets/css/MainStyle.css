@@ -1,0 +1,168 @@
+/*CSS3 Style for TG540Site Made by Peter Ivanov*/
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
+  
+/* MainColors */
+:root {
+    --background_main: #ecf0f1;
+    --background_main_2: #bdc3c7;
+    --black: #000000;
+    --white: #ffffff;
+    --Dark: #2c3e50;
+    --whitecow: #ecf0f1;
+    --green: #27ae60;
+    --silver: rgba(0, 0, 0, 0.5);
+    --blue: #0984e3;
+    --red: #d63031;
+    --orange: #e17055;
+    --yellow: #fdcb6e;
+    --pink: #e84393;
+    --exodus: #6c5ce7;
+    --dracula: #2d3436;
+    --border_color: rgba(0, 0, 0, 0.342);
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: var(--background_main);
+    overflow: hidden;
+    margin:0;
+    padding:0;
+    box-sizing: content-box;
+}
+
+/* A links */
+a{
+    color: var(--black);
+    text-decoration:none;
+    transition: all 0.2s ease-out;
+}
+a:hover{
+    color: var(--silver);
+}
+
+/* Text */
+h3 h4 h5{
+  font-weight: 600;  
+}
+h6{
+    font-weight: 550;
+}
+
+/* TextColor */
+.TextRed{color:var(--red);}
+.TextBlue{color:var(--blue);}
+.TextGreen{color:var(--green);}
+.TextYellow{color:var(--yellow);}
+.TextOrange{color:var(--orange);}
+.TextPink{color:var(--pink);}
+.TextViolet{color:var(--exodus);}
+.TextBlack{color:var(--black);}
+
+/* Hr lines */
+hr{
+    margin:20px 0px 20px 0px;
+	border-top: 2px solid var(--dracula);
+}
+.line50{
+    width:50%;
+}
+.line95{
+    width:95%;
+}
+
+/* Button */
+button{
+    background-color: var(--background_main);
+    border: none;
+    color: black;
+    padding: 10px 25px;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid var(--background_main_2);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+}
+button:focus button:active{
+    outline: none;
+}
+button:hover {
+    transform: scale(0.95);
+}
+.bgreen{
+    color: var(--white);
+    background-color: var(--green);
+    border: none;
+}
+.bred {
+    color: var(--white);
+    background-color: var(--red);
+    border: none;
+}
+.byellow {
+    color: var(--white);
+    background-color: var(--yellow);
+    border: none;
+}
+.bdark{
+    color: var(--white);
+    background-color: var(--black);
+    border: none;
+}
+.borange{
+    color: var(--white);
+    background-color: var(--orange);
+    border: none;
+}
+
+/* Card #1 */
+.MainCardBlock{
+    width:100%;
+    margin:0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.CardBlock{
+    background-color: var(--background_main);
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
+    width:80%;
+    height: 256px;
+    border-radius: 8px;
+    padding: 10px;
+    margin:30px;
+    overflow: hidden;
+    transition: all 0.5s ease-out;
+    color: var(--black);
+    box-sizing: border-box;
+}
+.CardBlock h1{
+    margin:5px 0px 10px 0px;
+    display: inline;
+}
+.CardBlock h2{
+    font-weight: 500;
+    font-size: 15px;
+    margin-top:5px;
+    word-wrap: break-word;
+}
+.CardBlock .CardTagSpace{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+/*.CardTagSpace .CardTag{
+    background-color: var(--blue);
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 8px;
+    padding: 5px 15px 5px 15px;
+    margin: 2px;
+    color: var(--white);
+}*/
+.CardBlock:hover{
+    transform: scale(1.1);
+    color: var(--black);
+}
